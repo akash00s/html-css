@@ -3,13 +3,20 @@ box-sizing:border-box;
 }
 body{
     background-color: white;
-    color: black;
+    color: rgb(0, 0, 0);
 
 }
-header{background-color: black;
+header{background-color: rgb(35, 37, 46);
 color: white;
 text-align:center;
 }
+header{
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
 p{
     line-height:1.6;
 }
@@ -19,4 +26,93 @@ nav ul li a{
 }
 nav ul li a:hover {
     color:blue;
+}
+/* =========================
+   6. CSS Box Model
+========================= */
+
+/* Padding inside containers */
+header,
+nav,
+section {
+    padding: 20px;
+}
+
+/* Space between sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* About section styling */
+#about {
+    background-color: #f4f4f4;
+    border-left: 6px solid #ff9800;
+    padding: 20px;
+}
+
+/* Main width and centering */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   7. Tables & Forms
+========================= */
+
+/* Table styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+}
+
+.data-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.data-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Form container */
+.form-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: 2px solid #007BFF;
+}
+
+/* Submit button */
+#submit-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
 }
